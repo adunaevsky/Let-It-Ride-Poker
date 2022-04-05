@@ -1,0 +1,199 @@
+body {
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    -webkit-user-select: none;
+    user-select: none;
+    background-attachment: fixed;
+    font-family: "HelveticaNeue-Light", "HelveticaNeue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    overflow: hidden;
+    background: #0000a0;
+}
+
+.fullScreen,
+#app {
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: #0000a0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.5s;
+}
+
+.fade-enter,
+.fade-leave-to {
+    opacity: 0;
+}
+
+.holdButtons {
+    padding-top: 42%;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+.changeBG {
+    position: absolute;
+    bottom: 0.2rem;
+    width: 2em;
+    height: 2em;
+    background-image: url("./refresh.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.settings {
+    position: absolute;
+    bottom: 0.2rem;
+    right: 0.2em;
+    width: 2em;
+    height: 2em;
+    background-image: url("./settings.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-size: 1em;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.payTable {
+    position: relative;
+}
+
+.payTableText {
+    paint-order: stroke;
+    stroke: #000000;
+    fill: #ffffff;
+    stroke-width: 2px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    font-weight: 800;
+    font-family: Arial, Helvetica;
+}
+
+.labelCash {
+    fill: #02f53a !important;
+}
+
+@-webkit-keyframes glow {
+    0% {
+        opacity: 0.5;
+        fill: #ff004c;
+    }
+    50% {
+        opacity: 1;
+        fill: #231f20;
+    }
+    100% {
+        opacity: 0.5;
+        fill: #ff004c;
+    }
+}
+
+@-moz-keyframes glow {
+    0% {
+        opacity: 0.5;
+        fill: #ff004c;
+    }
+    50% {
+        opacity: 1;
+        fill: #231f20;
+    }
+    100% {
+        opacity: 0.5;
+        fill: #ff004c;
+    }
+}
+
+@-o-keyframes glow {
+    0% {
+        opacity: 0.5;
+        fill: #ff004c;
+    }
+    50% {
+        opacity: 1;
+        fill: #231f20;
+    }
+    100% {
+        opacity: 0.5;
+        fill: #ff004c;
+    }
+}
+
+@keyframes glow {
+    0% {
+        opacity: 0.5;
+        fill: #ff004c;
+    }
+    50% {
+        opacity: 1;
+        fill: #231f20;
+    }
+    100% {
+        opacity: 0.5;
+        fill: #ff004c;
+    }
+}
+
+.glow {
+    fill: #231f20;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.glow {
+    cursor: pointer;
+    -webkit-animation: glow 1s infinite;
+    /* Safari 4+ */
+    -moz-animation: glow 1s infinite;
+    /* Fx 5+ */
+    -o-animation: glow 1s infinite;
+    /* Opera 12+ */
+    animation: glow 1s infinite;
+    /* IE 10+, Fx 29+ */
+}
+
+.settingBtn {
+    margin: 0.5em;
+}
+
+.topInfoBox {
+    position: relative;
+    background: white;
+    padding: 1em;
+    margin: 0em;
+    z-index: 100;
+}
+
+.statsTbl tr td,
+.statsTbl tr th {
+    border: 1px solid black;
+    padding: 0.2em;
+}
+
+.statsTbl {
+    padding: 0;
+    background: whitesmoke;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.winValueLabel {
+    paint-order: stroke;
+    stroke: #000000;
+    stroke-width: 2px;
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+}

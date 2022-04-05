@@ -1,0 +1,6 @@
+{
+  "appId": "com.realizegamingllc.lir",
+  "appName": "LIR",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}

@@ -1,0 +1,140 @@
+.rFillEffect {
+    fill: rgb(11, 128, 0);
+}
+
+.rFillEffect:hover {
+    fill: rgb(4, 168, 12);
+}
+
+.rFillEffect:active {
+    fill: rgb(3, 255, 79);
+}
+
+.rFillDeal {
+    fill: rgb(130, 0, 13);
+}
+
+.rFillDeal:hover {
+    fill: rgb(175, 0, 00);
+}
+
+.rFillDeal:active {
+    fill: rgb(175, 0, 00);
+}
+
+.rFillTrade {
+    fill: rgb(255, 33, 13);
+}
+
+.rFillTrade:hover {
+    fill: rgb(255, 33, 00);
+}
+
+.rFillTrade:active {
+    fill: rgb(255, 33, 00);
+}
+
+.lblBase {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+}
+
+.svgLblBase {
+    stroke: #e0e0e0;
+    stroke-miterlimit: 10;
+}
+
+.topBtnBox,
+.bottomBtnBox {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    cursor: pointer;
+}
+
+.topBtn,
+.bottomBtn,
+.btnHeightPlace {
+    position: relative;
+}
+
+@media all and (min-aspect-ratio: 970 / 600) {
+    /*LANDSCAPE MODE*/
+    .topBtn,
+    .bottomBtn {
+        bottom: -37%;
+    }
+    .bottomBtn {
+        bottom: -66%;
+    }
+    .sideBtn {
+        display: block;
+    }
+    .bottomBtn {
+        display: none;
+    }
+    .topBtnBox {
+        right: 0%;
+        width: 14%;
+    }
+    .bottomBtnBox {
+        right: 0%;
+        width: 14%;
+    }
+}
+
+@media all and (max-aspect-ratio: 520 / 600) {
+    /*PORTRAIT MODE*/
+    .topBtn,
+    .bottomBtn,
+    .topBtnBox,
+    .bottomBtnBox,
+    .btnHeightPlace {
+        bottom: -82%;
+    }
+    .sideBtn {
+        display: none;
+    }
+    .bottomBtn,
+    .topBtnBox {
+        display: block;
+    }
+    .topBtnBox {
+        right: 10%;
+        width: 45%;
+    }
+    .bottomBtnBox {
+        right: 51%;
+        width: 45%;
+    }
+}
+
+@media all and (max-aspect-ratio: 970 / 600) and (min-aspect-ratio: 520 / 600) {
+    /*SQUARE (DESKTOP) MODE*/
+    .topBtn {
+        bottom: -64%;
+    }
+    .bottomBtn {
+        bottom: -82%;
+    }
+    .btnHeightPlace {
+        bottom: -65%;
+    }
+    .sideBtn {
+        display: block;
+    }
+    .bottomBtn {
+        display: none;
+    }
+    .topBtnBox {
+        right: 0%;
+        width: 12%;
+    }
+    .bottomBtnBox {
+        right: 0%;
+        width: 12%;
+    }
+}

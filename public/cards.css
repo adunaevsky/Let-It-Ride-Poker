@@ -1,0 +1,770 @@
+.fadeOut {
+    opacity: 0.2;
+    transform: scale(0.9);
+}
+
+.cSize {
+    width: 18%;
+    padding-bottom: 23%;
+    background-size: 100% 100%;
+}
+
+.holdSpot {
+    width: 18%;
+    padding-bottom: 57%;
+    background-size: 100% 100%;
+}
+
+.flip-container {
+    perspective: 1000px;
+}
+
+.flip-container.flip .flipper {
+    transform: rotateY(180deg);
+}
+
+.front,
+.back,
+.safariBack {
+    width: 100%;
+    height: 100%;
+}
+
+.flipper {
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.a {
+    isolation: isolate;
+}
+
+.b,
+.g {
+    fill: #fff;
+}
+
+.b {
+    stroke: #000;
+}
+
+.c {
+    stroke-miterlimit: 10;
+    fill: url(#a);
+    stroke: url(#b);
+}
+
+.d {
+    fill: #994105;
+}
+
+.e {
+    fill: #ffe85f;
+}
+
+.f {
+    fill: #f99635;
+    mix-blend-mode: multiply;
+}
+
+.h {
+    fill: #493f02;
+}
+
+.i {
+    fill: #ffe471;
+}
+
+.j {
+    fill: #161201;
+}
+
+.k {
+    fill: #ffe67b;
+}
+
+.l {
+    fill: #141001;
+}
+
+
+/* hide back of pane during swap */
+
+.front,
+.back,
+.safariBack {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 128%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+/* front pane, placed above back */
+
+.front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+}
+
+
+/* back, initially hidden pane */
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.mainCards,
+.singleResult {
+    margin: 0 auto;
+    position: relative;
+}
+
+.vLabel,
+.resultArea,
+.resultArea2,
+.resultArea3,
+.placeCardArea,
+.cardArea,
+.cardArea2,
+.cardArea3,
+.holdArea {
+    position: relative;
+}
+
+.placeCardArea,
+.cardArea,
+.cardArea2,
+.cardArea3 {
+    transition: opacity 1s, transform 1s;
+}
+
+@media all and (min-aspect-ratio: 970 / 600) {
+    /*LANDSCAPE MODE*/
+    .changeBG {
+        left: 0.2rem;
+    }
+    .rSlide1 {
+        animation: moveRight1 0.8s forwards;
+    }
+    .rSlide2 {
+        animation: moveRight2 0.8s forwards;
+    }
+    .rSlide3 {
+        animation: moveRight3 0.8s forwards;
+    }
+    .label {
+        width: 36%;
+        left: 35.5%;
+    }
+    .placeCard {
+        width: 56%;
+        position: relative;
+        left: 1%;
+    }
+    .mainCards {
+        width: 56%;
+    }
+    .vLabel,
+    .resultArea,
+    .resultArea2,
+    .resultArea3,
+    .placeCardArea,
+    .singleResult,
+    .cardArea,
+    .cardArea2,
+    .cardArea3 .holdArea {
+        margin: 0 auto;
+    }
+    .placeCardArea {
+        padding-left: 6%;
+    }
+    .placeCardText {
+        padding-bottom: 7%;
+    }
+    /*   .singleResult {
+    top: 24%;
+  } */
+    .stringResultBonus {
+        top: 25%;
+    }
+    .primaryHandResult {
+        top: 60%;
+    }
+    .placeCardTop {
+        top: 20%;
+    }
+    .cardArea {
+        top: 20%;
+    }
+    .cardArea2 {
+        top: 45%;
+    }
+    .cardArea3 {
+        top: 70%;
+        left: 6%;
+    }
+    .resultArea {
+        top: 15%;
+    }
+    .vLabel {
+        top: -13%;
+    }
+    .resultArea2 {
+        top: 40%;
+    }
+    .resultArea3 {
+        top: 65%;
+    }
+    .holdArea {
+        top: 25%;
+    }
+    .stringCard {
+        top: 25% !important;
+    }
+    .held {
+        animation: moveUp 0.2s forwards;
+    }
+    @keyframes moveUp {
+        0% {
+            top: 60%;
+            animation-timing-function: ease-in;
+        }
+        100% {
+            top: 25%;
+            animation-timing-function: ease-in;
+        }
+    }
+    .unHeld {
+        animation: moveDown 0.2s forwards;
+    }
+    @keyframes moveDown {
+        0% {
+            top: 25%;
+            animation-timing-function: ease-in;
+        }
+        100% {
+            top: 60%;
+        }
+    }
+    .bCard1 {
+        top: 48%;
+    }
+    .bCard2 {
+        top: 57%;
+    }
+    .bCard3 {
+        top: 66%;
+    }
+    .bCard4 {
+        top: 75%;
+    }
+}
+
+@media all and (max-aspect-ratio: 520 / 600) {
+    /*PORTRAIT MODE*/
+    .changeBG {
+        left: 0.2rem;
+    }
+    .label {
+        width: 66%;
+        left: 22.5%;
+    }
+    .stringCard {
+        top: 36.5% !important;
+    }
+    .held {
+        animation: moveUp 0.2s forwards;
+    }
+    @keyframes moveUp {
+        0% {
+            top: 56.5%;
+            animation-timing-function: ease-in;
+        }
+        100% {
+            top: 36.5%;
+        }
+    }
+    .unHeld {
+        animation: moveDown 0.2s forwards;
+    }
+    @keyframes moveDown {
+        0% {
+            top: 36.5%;
+            animation-timing-function: ease-in;
+        }
+        100% {
+            top: 56.5%;
+        }
+    }
+    .placeCard {
+        width: 100%;
+    }
+    .mainCards {
+        width: 100%;
+    }
+    .placeCardArea {
+        margin: 0 auto;
+    }
+    .placeCardArea {
+        padding-left: 4%;
+    }
+    .placeCardText {
+        position: absolute;
+        left: 82%;
+        width: 132%;
+    }
+    .placeCard {
+        position: absolute;
+        top: 0%;
+        left: 64%;
+    }
+    .placeCardTop {
+        top: 14%;
+    }
+    .cardArea {
+        top: 35%;
+        margin: 0 auto;
+    }
+    .cardArea2 {
+        top: 50%;
+        margin: 0 auto;
+    }
+    .cardArea3 {
+        top: 65%;
+        margin: 0 auto;
+        left: 9%;
+    }
+    .resultArea {
+        top: 35%;
+        margin: 0 auto;
+    }
+    .vLabel {
+        top: 35%;
+        margin: 0 auto;
+    }
+    .resultArea2 {
+        top: 50%;
+        margin: 0 auto;
+    }
+    .resultArea3 {
+        top: 65%;
+        margin: 0 auto;
+    }
+    .holdArea {
+        top: 35%;
+        margin: 0 auto;
+    }
+    .singleResult {
+        margin: 0 auto;
+    }
+    .stringResultBonus {
+        top: 38%;
+    }
+    .primaryHandResult {
+        top: 59%;
+    }
+    .bCard1 {
+        top: 50%;
+    }
+    .bCard2 {
+        top: 56%;
+    }
+    .bCard3 {
+        top: 62%;
+    }
+    .bCard4 {
+        top: 68%;
+    }
+}
+
+@media all and (max-aspect-ratio: 970 / 600) and (min-aspect-ratio: 520 / 600) {
+    /*SQUARE (DESKTOP) MODE*/
+    .changeBG {
+        left: 0.2rem;
+    }
+    .label {
+        width: 53%;
+        left: 28.725%;
+    }
+    .placeCard {
+        width: 80%;
+    }
+    .mainCards {
+        width: 80%;
+    }
+    .placeCardArea {
+        right: -82%;
+    }
+    .placeCardTop {
+        top: 25%;
+    }
+    .placeCardText {
+        padding-bottom: 7%;
+        padding-left: 1%;
+    }
+    .cardArea {
+        top: 15%;
+        left: -10%;
+    }
+    .cardArea2 {
+        top: 42%;
+        left: -10%;
+    }
+    .cardArea3 {
+        top: 69%;
+        left: 0%;
+    }
+    .resultArea {
+        top: 15%;
+        left: -10%;
+    }
+    .vLabel {
+        top: 15%;
+        left: -10%;
+    }
+    .resultArea2 {
+        top: 42%;
+        left: -10%;
+    }
+    .resultArea3 {
+        top: 69%;
+        left: -10%;
+    }
+    .holdArea {
+        top: 20%;
+        left: -10%;
+    }
+    .stringCard {
+        top: 20% !important;
+    }
+    .held {
+        animation: moveUp 0.2s forwards;
+    }
+    @keyframes moveUp {
+        0% {
+            top: 50%;
+            animation-timing-function: ease-in;
+        }
+        100% {
+            top: 20%;
+        }
+    }
+    .unHeld {
+        animation: moveDown 0.2s forwards;
+    }
+    @keyframes moveDown {
+        0% {
+            top: 20%;
+            animation-timing-function: ease-in;
+        }
+        100% {
+            top: 50%;
+        }
+    }
+    .singleResult {
+        left: -10%;
+    }
+    .stringResultBonus {
+        top: 18%;
+    }
+    .primaryHandResult {
+        top: 56%;
+    }
+    .bCard1 {
+        top: 44%;
+    }
+    .bCard2 {
+        top: 53%;
+    }
+    .bCard3 {
+        top: 62%;
+    }
+    .bCard4 {
+        top: 71%;
+    }
+}
+
+.label,
+.label1,
+.label2,
+.label3,
+.label4,
+.label5,
+.c5Pos,
+.c4Pos,
+.c3Pos,
+.c2Pos,
+.c1Pos {
+    position: absolute;
+}
+
+.c5Pos {
+    right: 2%;
+}
+
+.c4Pos {
+    right: 21.5%;
+}
+
+.c3Pos {
+    right: 50%;
+    margin-right: -9%;
+}
+
+.c2Pos,
+.label2 {
+    left: 21.5%;
+}
+
+.c1Pos,
+.label1 {
+    left: 2%;
+}
+
+.label3 {
+    right: 2%;
+}
+
+.label4 {
+    right: 36.5%;
+}
+
+.label5 {
+    right: 17%;
+}
+
+.N {
+    background-image: url("./static/cards/N.svg");
+}
+
+.C10 {
+    background-image: url("./static/cards/10C.svg");
+}
+
+.D10 {
+    background-image: url("./static/cards/10D.svg");
+}
+
+.H10 {
+    background-image: url("./static/cards/10H.svg");
+}
+
+.S10 {
+    background-image: url("./static/cards/10S.svg");
+}
+
+.C2 {
+    background-image: url("./static/cards/2C.svg");
+}
+
+.D2 {
+    background-image: url("./static/cards/2D.svg");
+}
+
+.H2 {
+    background-image: url("./static/cards/2H.svg");
+}
+
+.S2 {
+    background-image: url("./static/cards/2S.svg");
+}
+
+.C3 {
+    background-image: url("./static/cards/3C.svg");
+}
+
+.D3 {
+    background-image: url("./static/cards/3D.svg");
+}
+
+.H3 {
+    background-image: url("./static/cards/3H.svg");
+}
+
+.S3 {
+    background-image: url("./static/cards/3S.svg");
+}
+
+.C4 {
+    background-image: url("./static/cards/4C.svg");
+}
+
+.D4 {
+    background-image: url("./static/cards/4D.svg");
+}
+
+.H4 {
+    background-image: url("./static/cards/4H.svg");
+}
+
+.S4 {
+    background-image: url("./static/cards/4S.svg");
+}
+
+.C5 {
+    background-image: url("./static/cards/5C.svg");
+}
+
+.D5 {
+    background-image: url("./static/cards/5D.svg");
+}
+
+.H5 {
+    background-image: url("./static/cards/5H.svg");
+}
+
+.S5 {
+    background-image: url("./static/cards/5S.svg");
+}
+
+.S6 {
+    background-image: url("./static/cards/6S.svg");
+}
+
+.H6 {
+    background-image: url("./static/cards/6H.svg");
+}
+
+.D6 {
+    background-image: url("./static/cards/6D.svg");
+}
+
+.C6 {
+    background-image: url("./static/cards/6C.svg");
+}
+
+.S7 {
+    background-image: url("./static/cards/7S.svg");
+}
+
+.H7 {
+    background-image: url("./static/cards/7H.svg");
+}
+
+.D7 {
+    background-image: url("./static/cards/7D.svg");
+}
+
+.C7 {
+    background-image: url("./static/cards/7C.svg");
+}
+
+.C8 {
+    background-image: url("./static/cards/8C.svg");
+}
+
+.H8 {
+    background-image: url("./static/cards/8H.svg");
+}
+
+.D8 {
+    background-image: url("./static/cards/8D.svg");
+}
+
+.S8 {
+    background-image: url("./static/cards/8S.svg");
+}
+
+.S9 {
+    background-image: url("./static/cards/9S.svg");
+}
+
+.H9 {
+    background-image: url("./static/cards/9H.svg");
+}
+
+.D9 {
+    background-image: url("./static/cards/9D.svg");
+}
+
+.C9 {
+    background-image: url("./static/cards/9C.svg");
+}
+
+.C11 {
+    background-image: url("./static/cards/JC.svg");
+}
+
+.D11 {
+    background-image: url("./static/cards/JD.svg");
+}
+
+.H11 {
+    background-image: url("./static/cards/JH.svg");
+}
+
+.S11 {
+    background-image: url("./static/cards/JS.svg");
+}
+
+.S13 {
+    background-image: url("./static/cards/KS.svg");
+}
+
+.H13 {
+    background-image: url("./static/cards/KH.svg");
+}
+
+.D13 {
+    background-image: url("./static/cards/KD.svg");
+}
+
+.C13 {
+    background-image: url("./static/cards/KC.svg");
+}
+
+.C12 {
+    background-image: url("./static/cards/QC.svg");
+}
+
+.H12 {
+    background-image: url("./static/cards/QH.svg");
+}
+
+.D12 {
+    background-image: url("./static/cards/QD.svg");
+}
+
+.S12 {
+    background-image: url("./static/cards/QS.svg");
+}
+
+.C14 {
+    background-image: url("./static/cards/AC.svg");
+}
+
+.H14 {
+    background-image: url("./static/cards/AH.svg");
+}
+
+.D14 {
+    /*  background-image: url("./static/cards/AD.PNG"); */
+    background-image: url("./static/cards/AD.svg");
+}
+
+.S14 {
+    background-image: url("./static/cards/AS.svg");
+}
+
+.cBack1 {
+    /* background-image: url("./static/cards/RG-CardBack-700.png"); */
+    /*  background-image: url("./static/cards/RG-CardBack-800.png"); */
+    /*  background-image: url("./static/cards/cardBack2.svg"); */
+    /*   background-image: url("./static/cards/cardBack_YourLogo.png"); */
+    /*   background-image: url("./static/cards/cardBack_Wizard.png"); */
+    /*    background-image: url("./static/cards/cardBackPS.png"); */
+    /*  background-image: url("./static/cards/cardBack-IGT.png"); */
+    /*    background-image: url("./static/cards/cardBack-Aristocrat.png"); */
+    /*   background-image: url("./static/cards/cardBack-Caesars.png"); */
+    /*    background-image: url("./static/cards/cardBack_JVL.png"); */
+    /* background-image: url("./static/cards/cardBack_Aruze.png"); */
+    /*   background-image: url("./static/cards/cardBack_ActionGaming.png"); */
+    background-size: 87% 99% !important;
+    background-position: center;
+}
