@@ -1,0 +1,29 @@
+
+Anroid studio setup:
+SDK and emulator version must be the same! (API level 28)
+
+When installing SKD Tools, it needs the following checked off:
+    Android SDK Build-Tools
+    Android SDK Command-line Tools
+    Android Emulator
+    Android SDK Platform-Tools
+
+Capacitor commands:
+
+npm install @capacitor/cli @capacitor/core
+npx cap init
+npm install @capacitor/android
+npx cap add android
+
+npm run build
+npx cap sync (run after build)
+
+capacitor.config.json
+- set the app name
+
+vue.config.js
+- set publicPath to "".
+
+
+To add icon and spalsh screen:
+https://github.com/ionic-team/capacitor-assets#capacitor

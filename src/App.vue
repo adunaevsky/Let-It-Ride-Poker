@@ -153,8 +153,8 @@
 
       <!-- FOR DEV VERSION -->
       <div class="changeBG" @click="changeBG()"></div>
-      LEAVE
-      <div class="settings" @click="openSettings()"></div>
+     <!--  LEAVE -->
+     <!--  <div class="settings" @click="openSettings()"></div> -->
 
       <again v-if="stage.newGame" v-on:deal="deal"></again>
     </div>
