@@ -1,5 +1,5 @@
 module.exports = {
     lintOnSave: false,
-    publicPath: '/demo/ridePoker',
+    publicPath: '',
     productionSourceMap: false
 }

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">LIR</string>
-    <string name="title_activity_main">LIR</string>
+    <string name="app_name">Big River Poker</string>
+    <string name="title_activity_main">Big River Poker</string>
     <string name="package_name">com.realizegamingllc.lir</string>
     <string name="custom_url_scheme">com.realizegamingllc.lir</string>
 </resources>
