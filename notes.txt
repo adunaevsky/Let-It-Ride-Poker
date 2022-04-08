@@ -28,4 +28,6 @@ vue.config.js
 
 To add icon and spalsh screen:
 https://github.com/ionic-team/capacitor-assets#capacitor
+
+npm install -g cordova-res
 cordova-res android --skip-config --copy
