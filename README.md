@@ -1,4 +1,4 @@
-# lit
+# Let It Ride Poker Android App
 
 ## Project setup
 ```
