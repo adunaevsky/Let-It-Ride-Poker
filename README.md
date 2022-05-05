@@ -1,5 +1,8 @@
 # Let It Ride Poker Android App
 
+## Play the demo game
+https://realizegamingllc.com/demo/ridePoker/ 
+
 ## Project setup
 ```
 npm install
